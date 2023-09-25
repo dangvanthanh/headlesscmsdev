@@ -3,22 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "panda codegen",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@builder.io/dev-tools": "^0.1.24",
+    "@builder.io/react": "^3.0.14",
+    "@builder.io/sdk": "^2.0.8",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
+    "@pandacss/dev": "^0.15.1",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
-  }
+    "eslint-config-next": "latest",
+    "typescript": "latest",
+    "bun-types": "latest"
+  },
+  "module": "index.ts",
+  "type": "module"
 }
