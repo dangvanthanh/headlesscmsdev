@@ -2,6 +2,7 @@
 import { Builder } from "@builder.io/react";
 import Counter from "./components/Counter/Counter";
 import Hero from "./components/Hero/Hero";
+import Features from "./components/Features/Features";
 
 Builder.registerComponent(Counter, {
   name: "Counter",
@@ -26,6 +27,23 @@ Builder.registerComponent(Hero, {
       name: "title",
       type: "string",
       defaultValue: "We invest in the world's potential",
+    },
+  ],
+});
+
+Builder.registerComponent(Features, {
+  name: "Features",
+  inputs: [
+    {
+      name: "description",
+      type: "longText",
+      defaultValue:
+        "Here at Paga we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.",
+    },
+    {
+      name: "title",
+      type: "string",
+      defaultValue: "Designed for business teams like yours",
     },
   ],
 });

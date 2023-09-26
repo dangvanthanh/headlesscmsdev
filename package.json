@@ -26,7 +26,5 @@
     "eslint-config-next": "latest",
     "typescript": "latest",
     "bun-types": "latest"
-  },
-  "module": "index.ts",
-  "type": "module"
+  }
 }
